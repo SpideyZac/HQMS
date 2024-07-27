@@ -1,0 +1,6 @@
+%queuetotal%
+
+define inqueue stat "inqueue"
+%inqueue%
+
+%logics%

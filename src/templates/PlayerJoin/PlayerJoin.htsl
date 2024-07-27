@@ -1,0 +1,6 @@
+define inqueue stat "inqueue"
+%inqueues%
+%playings%
+
+inqueue = 0
+%logics%

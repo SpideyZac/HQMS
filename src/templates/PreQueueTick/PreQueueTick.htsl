@@ -1,0 +1,14 @@
+%newqueuetotals%
+%queuetotals%
+
+%inqueues%
+
+%setqueuetotals%
+
+function "queuetick" true
+pause 5
+function "matchmakertick" true
+
+goto function "queuetick"
+
+%logics%

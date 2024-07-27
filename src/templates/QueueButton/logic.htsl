@@ -1,0 +1,9 @@
+if or (inqueue == 1, queuetotal%queueid% >= 2) {
+    chat "&cYou are already in the queue or the queue is full."
+} else {
+    inqueue = 1
+    inqueue%queueid% = 1
+    queuetotal%queueid% += 1
+    chat "&aYou have joined the queue %stat.global/queuetotal%queueid%%/2"
+    chat "&eClick me again to leave the queue."
+}\n

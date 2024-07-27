@@ -1,0 +1,9 @@
+%queuetotals%
+
+define inqueue stat "inqueue"
+%inqueues%
+
+if and (inqueue == 0) {
+    displayMenu "Join Queue"
+}
+%logics%

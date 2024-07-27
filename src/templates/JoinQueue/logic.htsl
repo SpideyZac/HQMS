@@ -1,0 +1,6 @@
+if and (inqueue%queueid% == 1) {
+    inqueue = 0
+    inqueue%queueid% = 0
+    queuetotal%queueid% -= 1
+    chat "&cYou have left the queue."
+}\n

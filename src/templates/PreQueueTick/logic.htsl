@@ -1,0 +1,9 @@
+if and (inqueue%queueid% == 1) {
+    newqueuetotal%queueid% += 1
+}
+
+if and (newqueuetotal%queueid% == queuetotal%queueid%) {
+
+} else {
+    queuetotal%queueid% = newqueuetotal%queueid%
+}\n

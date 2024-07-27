@@ -1,0 +1,2 @@
+define playing1q%queueid%p%platid% stat "playing1q%queueid%p%platid%"
+define playing2q%queueid%p%platid% stat "playing2q%queueid%p%platid%"\n

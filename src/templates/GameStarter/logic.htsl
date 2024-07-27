@@ -1,0 +1,30 @@
+if and (q%queueid%p%platid%start == 1, playing1q%queueid%p%platid% == 1) {
+    q%queueid%p%platid%start = 0
+    actionBar "&a3..."
+    tp "custom_coordinates" "%spawn1%"
+    pause 20
+    actionBar "&62..."
+    tp "custom_coordinates" "%spawn1%"
+    pause 20
+    actionBar "&c1..."
+    tp "custom_coordinates" "%spawn1%"
+    pause 20
+    actionBar "&aGo!"
+    tp "custom_coordinates" "%spawn1%"
+    sound "Note Pling" 1 1 "current_location"
+}
+
+if and (q%queueid%p%platid%start == 1, playing2q%queueid%p%platid% == 1) {
+    q%queueid%p%platid%start = 0
+    actionBar "&a3..."
+    tp "custom_coordinates" "%spawn2%"
+    pause 20
+    actionBar "&62..."
+    tp "custom_coordinates" "%spawn2%"
+    pause 20
+    actionBar "&c1..."
+    tp "custom_coordinates" "%spawn2%"
+    pause 20
+    actionBar "&aGo!"
+    tp "custom_coordinates" "%spawn2%"
+}\n

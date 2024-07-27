@@ -1,0 +1,18 @@
+if and (q%queueid%p%platid% == 1, playing1q%queueid%p%platid% == 0, inqueue%queueid% == 1, queuetotal%queueid% == 2) {
+    q%queueid%p%platid% = 2
+    playing2q%queueid%p%platid% = 1
+    tp "custom_coordinates" "%spawn2%"
+    inqueue%queueid% = 0
+    inqueue = 0
+    queuetotal%queueid% = 0
+    q%queueid%p%platid%start = 1
+}
+
+if and (q%queueid%p%platid% == 0, inqueue%queueid% == 1, queuetotal%queueid% == 2) {
+    q%queueid%p%platid% = 1
+    playing1q%queueid%p%platid% = 1
+    tp "custom_coordinates" "%spawn1%"
+    inqueue%queueid% = 0
+    inqueue = 0
+    q%queueid%p%platid%start = 1
+}\n

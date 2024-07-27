@@ -1,0 +1,35 @@
+if and (q%queueid%p%platid% == 3, playing1q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 0
+    playing1q%queueid%p%platid% = 0
+    chat "&aYou have won the game"
+    title "&aVICTORY!" "Yay!" 1 3 1
+    pause 5
+    tp "house_spawn"
+}
+
+if and (q%queueid%p%platid% == 4, playing2q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 0
+    playing2q%queueid%p%platid% = 0
+    chat "&aYou have won the game"
+    title "&aVICTORY!" "Yay!" 1 3 1
+    pause 5
+    tp "house_spawn"
+}
+
+if and (q%queueid%p%platid% == 5, playing1q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 0
+    playing1q%queueid%p%platid% = 0
+    chat "&eDRAW!"
+    title "&eDRAW!" "Oh no!" 1 3 1
+    pause 5
+    tp "house_spawn"
+}
+
+if and (q%queueid%p%platid% == 5, playing2q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 0
+    playing2q%queueid%p%platid% = 0
+    chat "&eDRAW!"
+    title "&eDRAW!" "Oh no!" 1 3 1
+    pause 5
+    tp "house_spawn"
+}\n

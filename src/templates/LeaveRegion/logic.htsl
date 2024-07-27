@@ -1,0 +1,16 @@
+if and (q%queueid%p%platid% == 2) {
+
+} else {
+    exit
+}
+
+if and (playing1q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 4
+    playing1q%queueid%p%platid% = 0
+    chat "&cYou have lost the game!"
+}
+if and (playing2q%queueid%p%platid% == 1) {
+    q%queueid%p%platid% = 3
+    playing2q%queueid%p%platid% = 0
+    chat "&cYou have lost the game!"
+}\n
