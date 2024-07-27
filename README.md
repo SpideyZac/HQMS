@@ -46,8 +46,8 @@ The configuration file should be a JSON file with the following structure:
             "platforms": [
                 {
                     "id": 1,
-                    "spawn1": "location1",
-                    "spawn2": "location2"
+                    "spawn1": "-27 103 28",
+                    "spawn2": "-18 103 28"
                 }
             ]
         }
