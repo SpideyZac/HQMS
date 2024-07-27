@@ -6,7 +6,7 @@ Housing Queue Management System
 
 ## Overview
 
-HQMS is a system designed to manage/create housing game queues efficiently.
+HQMS is a system designed to manage/create hypixel housing game queues efficiently.
 It reads configuration from a JSON file and generates various queue-related files based on the provided configuration.
 These files are in the .htsl format or [Housing Text Scripting Language](https://github.com/BusterBrown1218/HTSL).
 
