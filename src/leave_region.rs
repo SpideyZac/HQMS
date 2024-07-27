@@ -16,7 +16,7 @@ pub fn generate_leave_region(queues: &Vec<Queue>, out_file_base: &str) {
             content = content.replace(
                 "%playing%",
                 format!(
-                    "define playing1q{}p{} stat \"playing1q{}p{}\"\ndefine playing2q{}p{} stat\"playing2q{}p{}\"\n",
+                    "define playing1q{}p{} stat \"playing1q{}p{}\"\ndefine playing2q{}p{} stat \"playing2q{}p{}\"\n",
                     q._id, p._id, q._id, p._id, q._id, p._id, q._id, p._id
                 )
                 .as_str(),
