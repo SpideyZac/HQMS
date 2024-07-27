@@ -1,1 +1,1 @@
-define timerq%queueid%p%platid% stat "timerq%queueid%p%platid%"\n
+define timerq%queueid%p%platid% globalstat "timerq%queueid%p%platid%"\n

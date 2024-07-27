@@ -46,7 +46,9 @@ struct Config {
 }
 
 fn main() {
-    let config_path = std::env::args().nth(1).unwrap_or_else(|| "config.json".to_string());
+    let config_path = std::env::args()
+        .nth(1)
+        .unwrap_or_else(|| "config.json".to_string());
     let config = std::fs::read_to_string(config_path).expect("Unable to read file");
     let config: Config = serde_json::from_str(&config).expect("Unable to parse JSON");
 
@@ -72,13 +74,38 @@ fn main() {
     }
 
     generate_1s(&queues, format!("{}/1s.htsl", config.out_dir).as_str());
-    generate_game_starter(&queues, format!("{}/GameStarter.htsl", config.out_dir).as_str());
-    generate_game_watcher(&queues, format!("{}/GameWatcher.htsl", config.out_dir).as_str());
-    generate_join_queue(&queues, format!("{}/JoinQueue.htsl", config.out_dir).as_str());
+    generate_game_starter(
+        &queues,
+        format!("{}/GameStarter.htsl", config.out_dir).as_str(),
+    );
+    generate_game_watcher(
+        &queues,
+        format!("{}/GameWatcher.htsl", config.out_dir).as_str(),
+    );
+    generate_join_queue(
+        &queues,
+        format!("{}/JoinQueue.htsl", config.out_dir).as_str(),
+    );
     generate_leave_region(&queues, config.out_dir.as_str());
-    generate_match_maker(&queues, format!("{}/MatchMaker.htsl", config.out_dir).as_str());
-    generate_player_join(&queues, format!("{}/PlayerJoin.htsl", config.out_dir).as_str());
-    generate_player_leave(&queues, format!("{}/PlayerLeave.htsl", config.out_dir).as_str());
-    generate_pre_queue_tick(&queues, format!("{}/PreQueueTick.htsl", config.out_dir).as_str());
+    generate_match_maker(
+        &queues,
+        format!("{}/MatchMaker.htsl", config.out_dir).as_str(),
+    );
+    generate_player_join(
+        &queues,
+        format!("{}/PlayerJoin.htsl", config.out_dir).as_str(),
+    );
+    generate_player_leave(
+        &queues,
+        format!("{}/PlayerLeave.htsl", config.out_dir).as_str(),
+    );
+    generate_pre_queue_tick(
+        &queues,
+        format!("{}/PreQueueTick.htsl", config.out_dir).as_str(),
+    );
     generate_queue_button(&queues, config.out_dir.as_str());
+
+    println!("Done!\nInstructions:");
+    let instructions = include_str!("templates/instructions.txt");
+    println!("{}", instructions);
 }

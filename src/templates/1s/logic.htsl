@@ -1,4 +1,4 @@
-timerq%queueid%p%platid% -= 1;
+timerq%queueid%p%platid% -= 1
 if and (timerq%queueid%p%platid% == 1, q%queueid%p%platid% == 2) {
-    q%queueid%p%platid% = 5;
+    q%queueid%p%platid% = 5
 }\n
